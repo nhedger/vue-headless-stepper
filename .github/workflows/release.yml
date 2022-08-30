@@ -18,14 +18,6 @@ jobs:
           package-name: '@hedger/vue-headless-stepper'
           prerelease: true
           bump-minor-pre-major: true
-    outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
-
-  publish:
-    if: ${{ jobs.release-please.outputs.release_created }}
-    name: Publish on npmjs.org
-    runs-on: ubuntu-latest
-    steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up NodeJS
@@ -40,6 +32,7 @@ jobs:
       - name: Build library
         run: pnpm run build
       - name: Publish
+        if: ${{ steps.release.outputs.release_created }}
         run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
