@@ -19,7 +19,7 @@ jobs:
           bump-minor-pre-major: true
 
   publish:
-    if: ${{ steps.release-please.outputs.release_created }}
+    if: ${{ jobs.release-please.steps.release-please.outputs.release_created }}
     name: Publish on npmjs.org
     runs-on: ubuntu-latest
     steps:
