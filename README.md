@@ -71,3 +71,7 @@ current position.
     <button @click="next" :disabled="!hasNext">Next</button>
 </LinearStepper>
 ```
+
+## License
+
+This library is open-sourced software distributed under the [MIT License](LICENSE.md).
