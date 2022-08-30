@@ -16,6 +16,7 @@ jobs:
         with:
           release-type: node
           package-name: '@hedger/vue-headless-stepper'
+          default-branch: release
           prerelease: true
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
