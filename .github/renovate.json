@@ -1,6 +1,6 @@
 {
     "extends": ["config:base", "schedule:weekly"],
-    "labels": "dependencies",
+    "labels": ["dependencies"],
     "rangeStrategy": "bump",
     "packageRules": [
         {
