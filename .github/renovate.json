@@ -1,0 +1,11 @@
+{
+    "extends": ["config:base", "schedule:weekly"],
+    "labels": "dependencies",
+    "rangeStrategy": "bump",
+    "packageRules": [
+        {
+            "depTypeList": ["peerDependencies"],
+            "enabled": false
+        }
+    ]
+}
