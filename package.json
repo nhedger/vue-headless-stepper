@@ -1,0 +1,49 @@
+{
+    "name": "@hedger/vue-headless-stepper",
+    "version": "0.0.0",
+    "author": {
+        "name": "Nicolas Hedger",
+        "email": "nicolas@hedger.ch"
+    },
+    "description": "Headless stepper component for Vue 3",
+    "publishConfig": {
+        "access": "public"
+    },
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/vue-headless-stepper.umd.js",
+    "module": "./dist/vue-headless-stepper.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/vue-headless-stepper.es.js",
+            "require": "./dist/vue-headless-stepper.umd.js"
+        }
+    },
+    "types": "./dist/types/index.d.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build && vue-tsc --declaration --emitDeclarationOnly",
+        "preview": "vite preview",
+        "story:dev": "histoire dev",
+        "story:build": "histoire build",
+        "story:preview": "histoire preview"
+    },
+    "devDependencies": {
+        "@hedger/prettier-config": "^1.1.0",
+        "@histoire/plugin-vue": "^0.10.7",
+        "@types/node": "^18.7.14",
+        "@vitejs/plugin-vue": "^3.0.3",
+        "histoire": "^0.10.7",
+        "prettier": "^2.7.1",
+        "release-please": "^14.2.1",
+        "typescript": "^4.6.4",
+        "vite": "^3.0.7",
+        "vue": "^3.2.37",
+        "vue-tsc": "^0.39.5"
+    },
+    "peerDependencies": {
+        "vue": "^3.2"
+    }
+}
