@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.2](https://github.com/nhedger/vue-headless-stepper/compare/v0.2.1...v0.2.2) (2022-08-30)
+
+
+### Features
+
+* add `isFirst` and `isLast` slot properties to `Step` ([#10](https://github.com/nhedger/vue-headless-stepper/issues/10)) ([ceeaf2c](https://github.com/nhedger/vue-headless-stepper/commit/ceeaf2c6421de4c202aa3a98cc7699847a945271))
+
+
+### Bug Fixes
+
+* use default branch name ([5af5249](https://github.com/nhedger/vue-headless-stepper/commit/5af5249885ebddd4f24fde89aca95535230bf49d))
+
 ## [0.2.1](https://github.com/nhedger/vue-headless-stepper/compare/v0.2.0...v0.2.1) (2022-08-30)
 
 
