@@ -10,16 +10,19 @@ jobs:
     name: Release Please
     runs-on: ubuntu-latest
     steps:
-      - name: Run release-please
+      - id: release
+        name: Run release-please
         uses: google-github-actions/release-please-action@v3
         with:
           release-type: node
           package-name: '@hedger/vue-headless-stepper'
           prerelease: true
           bump-minor-pre-major: true
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
 
   publish:
-    if: ${{ jobs.release-please.steps.release-please.outputs.release_created }}
+    if: ${{ jobs.release-please.outputs.release_created }}
     name: Publish on npmjs.org
     runs-on: ubuntu-latest
     steps:
