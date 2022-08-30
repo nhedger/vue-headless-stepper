@@ -1,3 +1,4 @@
-import Stepper from './components/LinearStepper.vue';
+import LinearStepper from './components/LinearStepper.vue';
+import Step from './components/Step.vue';
 
-export { Stepper };
+export { LinearStepper, Step };
