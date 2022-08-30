@@ -1,0 +1,17 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  release-please:
+    name: Release Please
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run release-please
+        uses: google-github-actions/release-please-action@v3
+        with:
+          release-type: node
+          package-name: '@hedger/vue-headless-stepper'
