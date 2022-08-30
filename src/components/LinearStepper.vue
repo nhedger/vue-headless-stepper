@@ -67,8 +67,9 @@ import { registerInjectionKey } from '../inject';
      * Provide the `register` function to all child Step components.
      */
     provide(registerInjectionKey, register);
-    
+
     provide('current', current);
+    provide('steps', steps);
 </script>
 
 <template>
