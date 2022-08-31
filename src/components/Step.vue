@@ -34,7 +34,7 @@
      */
     const isFirst = computed<boolean | undefined>(() => {
         if (steps?.value !== undefined) {
-            return steps?.value.indexOf(step) === 0;
+            return steps.value.indexOf(step) === 0;
         }
         return undefined;
     });
@@ -44,7 +44,7 @@
      */
     const isLast = computed<boolean | undefined>(() => {
         if (steps?.value !== undefined) {
-            return index.value === steps.value.length - 1;
+            return steps.value.indexOf(step) === steps.value.length - 1;
         }
         return undefined;
     });
