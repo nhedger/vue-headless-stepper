@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0](https://github.com/nhedger/vue-headless-stepper/compare/v0.2.2...v0.3.0) (2022-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* implement automatic position detection (#18)
+
+### Features
+
+* implement automatic position detection ([#18](https://github.com/nhedger/vue-headless-stepper/issues/18)) ([24dd243](https://github.com/nhedger/vue-headless-stepper/commit/24dd243feb0ef98d400e04a1555fb8d0e9baa09e))
+
 ## [0.2.2](https://github.com/nhedger/vue-headless-stepper/compare/v0.2.1...v0.2.2) (2022-08-30)
 
 
