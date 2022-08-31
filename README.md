@@ -26,10 +26,10 @@ Create a `LinearStepper` component with some `Step` components as children.
 ```html
 <template>
     <LinearStepper v-slot="{current, previous, hasPrevious, next, hasNext}">
-        <Step :position="0">
+        <Step>
             Anything here will only appear if the current step is 0
         </Step>
-        <Step :position="1">
+        <Step>
             Anything here will only appear if the current step is 1
         </Step>
     </LinearStepper>

@@ -2,7 +2,7 @@
     import { computed, InjectionKey, provide, Ref, ref } from 'vue';
     import Step from './Step.vue';
     import { clamp } from '../helpers';
-import { registerInjectionKey } from '../inject';
+    import { registerInjectionKey } from '../inject';
 
     /**
      * When steps are mounted, they register with their parent stepper. This is
@@ -59,8 +59,8 @@ import { registerInjectionKey } from '../inject';
      * @param step A reference to the child step component being registered
      * @param position The position of the step in the stepper (0-based index)
      */
-    const register = (step: Ref, position: number): void => {
-        steps.value.splice(position < 0 ? 0 : position, 0, step);
+    const register = (step: Ref): void => {
+        steps.value.push(step);
     };
 
     /**

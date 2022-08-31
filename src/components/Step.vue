@@ -1,10 +1,11 @@
 <script setup lang="ts">
-    import { computed, inject, onMounted, Ref, ref } from 'vue';
+    import { computed, inject, Ref, ref } from 'vue';
     import { registerInjectionKey } from '../inject';
 
-    const props = defineProps<{
-        position: number;
-    }>();
+    /**
+     * A reference to the step component
+     */
+    const step = ref(null);
 
     /**
      * Inject the register method provided by the parent stepper
@@ -22,13 +23,19 @@
     const steps = inject<Ref<Ref[]>>('steps');
 
     /**
+     * Current index of the step
+     */
+    const index = computed<number | undefined>(() => {
+        return steps?.value.indexOf(step);
+    });
+
+    /**
      * Tells whether the step is the first step in the stepper
      */
     const isFirst = computed<boolean | undefined>(() => {
-        if (current?.value !== undefined && steps?.value !== undefined) {
-            return props.position === 0;
+        if (steps?.value !== undefined) {
+            return steps.value.indexOf(step) === 0;
         }
-
         return undefined;
     });
 
@@ -36,31 +43,22 @@
      * Tells whether the step is the last step in the stepper
      */
     const isLast = computed<boolean | undefined>(() => {
-        if (current?.value !== undefined && steps?.value !== undefined) {
-            return props.position === steps.value.length - 1;
+        if (steps?.value !== undefined) {
+            return steps.value.indexOf(step) === steps.value.length - 1;
         }
-
         return undefined;
     });
 
     /**
-     * A reference to the step component
+     * Register the step with the stepper
      */
-    const step = ref(null);
-
-    /**
-     * When the step is mounted, register it with the stepper
-     */
-    onMounted(() => {
-        if (register === undefined) {
-            console.error('Unable to register the step because a parent stepper is missing');
-            return;
-        }
-
-        register(step, props.position);
-    });
+    if (register !== undefined) {
+        register(step);
+    } else {
+        console.error('Unable to register the step because a parent stepper is missing');
+    }
 </script>
 
 <template>
-    <slot v-if="current === props.position" ref="step" :position="props.position" :is-first="isFirst" :is-last="isLast" />
+    <slot ref="step" :index="index" :is-first="isFirst" :is-last="isLast" />
 </template>
