@@ -13,17 +13,17 @@
                 <button type="button" @click="previous" :disabled="!hasPrevious">Previous</button>
                 <button type="button" @click="next" :disabled="!hasNext">Next</button>
             </div>
-            <Step v-slot="{ isFirst, isLast }">
+            <Step v-show="current === 0" v-slot="{ isFirst, isLast }">
                 Step 0
                 <div>is first: {{ isFirst }}</div>
                 <div>is last: {{ isLast }}</div>
             </Step>
-            <Step v-slot="{ isFirst, isLast }">
+            <Step v-show="current === 1" v-slot="{ isFirst, isLast }">
                 Step 1
                 <div>is first: {{ isFirst }}</div>
                 <div>is last: {{ isLast }}</div>
             </Step>
-            <Step v-slot="{ isFirst, isLast }">
+            <Step v-show="current === 2" v-slot="{ isFirst, isLast }">
                 Step 2
                 <div>is first: {{ isFirst }}</div>
                 <div>is last: {{ isLast }}</div>

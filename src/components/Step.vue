@@ -2,6 +2,15 @@
     import { computed, inject, Ref, ref } from 'vue';
     import { registerInjectionKey } from '../inject';
 
+    const props = withDefaults(
+        defineProps<{
+            as: string;
+        }>(),
+        {
+            as: 'div',
+        }
+    );
+
     /**
      * A reference to the step component
      */
@@ -60,5 +69,7 @@
 </script>
 
 <template>
-    <slot ref="step" :index="index" :is-first="isFirst" :is-last="isLast" />
+    <component :is="props.as">
+        <slot ref="step" :index="index" :is-first="isFirst" :is-last="isLast" />
+    </component>
 </template>
