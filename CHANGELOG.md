@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.5.0](https://github.com/nhedger/vue-headless-stepper/compare/v0.4.0...v0.5.0) (2022-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* keep track of a model associated to the step
+
+### Features
+
+* keep track of a model associated to the step ([3fb2538](https://github.com/nhedger/vue-headless-stepper/commit/3fb2538a01eca0ad792b899f721691551eeb8bd2))
+
 ## [0.4.0](https://github.com/nhedger/vue-headless-stepper/compare/v0.3.0...v0.4.0) (2022-09-01)
 
 
