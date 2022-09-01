@@ -7,7 +7,7 @@
         steps: (Partial<any> & Pick<any, 'id'>)[];
     }>();
 
-    const emit = defineEmits(['update:modelValue']);
+    const emit = defineEmits(['update:modelValue', 'update:completed', 'update:upcoming']);
 
     /**
      * When steps are mounted, they register with their parent stepper. This is
@@ -79,6 +79,8 @@
 
     watchEffect(() => {
         emit('update:modelValue', props.steps[current.value]);
+        emit('update:completed', props.steps.slice(0, current.value));
+        emit('update:upcoming', props.steps.slice(current.value));
     });
 </script>
 
