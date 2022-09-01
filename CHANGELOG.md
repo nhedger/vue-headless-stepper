@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/nhedger/vue-headless-stepper/compare/v0.5.0...v0.5.1) (2022-09-01)
+
+
+### Features
+
+* keep track of completed and upcoming steps ([be06846](https://github.com/nhedger/vue-headless-stepper/commit/be068467e27cb10a8af96fd1424909f08bf9dbdc))
+
 ## [0.5.0](https://github.com/nhedger/vue-headless-stepper/compare/v0.4.0...v0.5.0) (2022-09-01)
 
 
