@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.0](https://github.com/nhedger/vue-headless-stepper/compare/v0.3.0...v0.4.0) (2022-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* as root element to steps, div by default
+
+### Features
+
+* as root element to steps, div by default ([9829c82](https://github.com/nhedger/vue-headless-stepper/commit/9829c82bf6e5a2f3a7ddefa0bb3dc978bb8c3856))
+
 ## [0.3.0](https://github.com/nhedger/vue-headless-stepper/compare/v0.2.2...v0.3.0) (2022-08-31)
 
 
