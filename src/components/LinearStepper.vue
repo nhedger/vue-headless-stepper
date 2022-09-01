@@ -1,14 +1,19 @@
 <script setup lang="ts">
-    import { computed, InjectionKey, provide, Ref, ref } from 'vue';
-    import Step from './Step.vue';
+    import { computed, provide, Ref, ref, watchEffect } from 'vue';
     import { clamp } from '../helpers';
     import { registerInjectionKey } from '../inject';
+
+    const props = defineProps<{
+        steps: (Partial<any> & Pick<any, 'id'>)[];
+    }>();
+
+    const emit = defineEmits(['update:modelValue']);
 
     /**
      * When steps are mounted, they register with their parent stepper. This is
      * where we keep a reference to all the registered steps.
      */
-    const steps = ref<Ref[]>([]);
+    const stepComponents = ref<Ref[]>([]);
 
     /**
      * Index of the step currently being shown within the array of steps.
@@ -22,7 +27,7 @@
      * (if any), and returns the new index.
      */
     const previous = (): number =>
-        (current.value = clamp(current.value - 1, 0, steps.value.length - 1));
+        (current.value = clamp(current.value - 1, 0, stepComponents.value.length - 1));
 
     /**
      * Indicates whether the current step is preceded by another step
@@ -36,12 +41,12 @@
      * (if any), and returns the new index.
      */
     const next = (): number =>
-        (current.value = clamp(current.value + 1, 0, steps.value.length - 1));
+        (current.value = clamp(current.value + 1, 0, stepComponents.value.length - 1));
 
     /**
      * Indicates whether the current step if following by another step
      */
-    const hasNext = computed(() => current.value < steps.value.length - 1);
+    const hasNext = computed(() => current.value < stepComponents.value.length - 1);
 
     /**
      * Move to the specified step
@@ -49,7 +54,8 @@
      * This function moves the stepper's internal cursor to the specified step
      * and returns the new index.
      */
-    const goTo = (step: number) => (current.value = clamp(step, 0, steps.value.length - 1));
+    const goTo = (step: number) =>
+        (current.value = clamp(step, 0, stepComponents.value.length - 1));
 
     /**
      * Registers a step with the stepper
@@ -60,7 +66,7 @@
      * @param position The position of the step in the stepper (0-based index)
      */
     const register = (step: Ref): void => {
-        steps.value.push(step);
+        stepComponents.value.push(step);
     };
 
     /**
@@ -69,7 +75,11 @@
     provide(registerInjectionKey, register);
 
     provide('current', current);
-    provide('steps', steps);
+    provide('steps', stepComponents);
+
+    watchEffect(() => {
+        emit('update:modelValue', props.steps[current.value]);
+    });
 </script>
 
 <template>

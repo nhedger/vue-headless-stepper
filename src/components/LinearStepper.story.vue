@@ -1,11 +1,24 @@
 <script setup lang="ts">
-    import LinearStepper from './LinearStepper.vue';
+    import { ref } from 'vue';
+import LinearStepper from './LinearStepper.vue';
     import Step from './Step.vue';
+
+    const steps = [
+        { id: 'first' },
+        { id: 'second' },
+        { id: 'third' },
+    ];
+
+    const step = ref(null);
 </script>
 
 <template>
     <Story title="Linear Stepper" :layout="{ type: 'single', iframe: false }">
-        <LinearStepper v-slot="{ current, previous, hasPrevious, next, hasNext }">
+        <div>
+            step: {{ step }}
+        </div>
+
+        <LinearStepper :steps="steps" v-model="step" v-slot="{ current, previous, hasPrevious, next, hasNext }">
             <div>current step: {{ current }}</div>
             <div>has previous steps: {{ hasPrevious }}</div>
             <div>has next steps: {{ hasNext }}</div>
