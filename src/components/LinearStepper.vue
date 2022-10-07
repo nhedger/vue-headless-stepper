@@ -3,9 +3,15 @@
     import { clamp } from '../helpers';
     import { registerInjectionKey } from '../inject';
 
-    const props = defineProps<{
-        steps: (Partial<any> & Pick<any, 'id'>)[];
-    }>();
+    const props = withDefaults(
+        defineProps<{
+            as?: string;
+            steps: (Partial<any> & Pick<any, 'id'>)[];
+        }>(),
+        {
+            as: 'div',
+        }
+    );
 
     const emit = defineEmits(['update:modelValue', 'update:completed', 'update:upcoming']);
 
@@ -85,11 +91,13 @@
 </script>
 
 <template>
-    <slot
-        :current="current"
-        :previous="previous"
-        :has-previous="hasPrevious"
-        :next="next"
-        :has-next="hasNext"
-        :go-to="goTo" />
+    <component :is="as">
+        <slot
+            :current="current"
+            :previous="previous"
+            :has-previous="hasPrevious"
+            :next="next"
+            :has-next="hasNext"
+            :go-to="goTo" />
+    </component>
 </template>
