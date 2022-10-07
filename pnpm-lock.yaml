@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@hedger/prettier-config': ^1.1.0
+  '@hedger/prettier-config': ^1.2.0
   '@histoire/plugin-vue': ^0.10.7
   '@types/node': ^18.7.14
   '@vitejs/plugin-vue': ^3.1.2
@@ -14,7 +14,7 @@ specifiers:
   vue-tsc: ^0.40.4
 
 devDependencies:
-  '@hedger/prettier-config': 1.1.0
+  '@hedger/prettier-config': 1.2.0
   '@histoire/plugin-vue': 0.10.7_xkazmmb24a3y3ho7fpcsr7ibxu
   '@types/node': 18.7.14
   '@vitejs/plugin-vue': 3.1.2_vite@3.0.9+vue@3.2.40
@@ -98,8 +98,8 @@ packages:
       - encoding
     dev: true
 
-  /@hedger/prettier-config/1.1.0:
-    resolution: {integrity: sha512-xFmfQ+T/IKbBMsNj83P0MA2PIh0gSre2p6VYZCDJd1uDaeAZjyzK72b2wYp7F5/jqWLciNubrioovWr3Hf5DPg==}
+  /@hedger/prettier-config/1.2.0:
+    resolution: {integrity: sha512-7P/emAIlilnN11j33pgktm+PBrCwVn3AQe6DxCYiojCXoBc5+G+pThleylDKDu2utLXfsboPOmGp/5uIzLzPcg==}
     dev: true
 
   /@histoire/app/0.10.7_vite@3.0.9:
