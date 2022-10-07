@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.2](https://github.com/nhedger/vue-headless-stepper/compare/v0.5.1...v0.5.2) (2022-10-07)
+
+
+### Bug Fixes
+
+* mark `as` prop as optional ([705638a](https://github.com/nhedger/vue-headless-stepper/commit/705638a0b6c196226ee59a0103b4083747f07869))
+* wrap slot in `div` ([856ff18](https://github.com/nhedger/vue-headless-stepper/commit/856ff18a2b7cb3a9be820ea183a2141c1c9ba769))
+
 ## [0.5.1](https://github.com/nhedger/vue-headless-stepper/compare/v0.5.0...v0.5.1) (2022-09-01)
 
 
