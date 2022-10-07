@@ -32,7 +32,7 @@
     },
     "devDependencies": {
         "@hedger/prettier-config": "^1.2.0",
-        "@histoire/plugin-vue": "^0.10.7",
+        "@histoire/plugin-vue": "^0.11.2",
         "@types/node": "^18.8.3",
         "@vitejs/plugin-vue": "^3.1.2",
         "histoire": "^0.10.7",
