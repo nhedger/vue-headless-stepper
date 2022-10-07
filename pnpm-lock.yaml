@@ -8,7 +8,7 @@ specifiers:
   histoire: ^0.10.7
   prettier: ^2.7.1
   release-please: ^14.11.0
-  typescript: ^4.8.2
+  typescript: ^4.8.4
   vite: ^3.0.9
   vue: ^3.2.40
   vue-tsc: ^0.40.4
@@ -21,10 +21,10 @@ devDependencies:
   histoire: 0.10.7_vite@3.0.9
   prettier: 2.7.1
   release-please: 14.11.0
-  typescript: 4.8.2
+  typescript: 4.8.4
   vite: 3.0.9
   vue: 3.2.40
-  vue-tsc: 0.40.4_typescript@4.8.2
+  vue-tsc: 0.40.4_typescript@4.8.4
 
 packages:
 
@@ -2529,7 +2529,7 @@ packages:
       parse-github-repo-url: 1.4.1
       semver: 7.3.7
       type-fest: 2.19.0
-      typescript: 4.8.2
+      typescript: 4.8.4
       unist-util-visit: 2.0.3
       unist-util-visit-parents: 3.1.1
       xpath: 0.0.32
@@ -2935,8 +2935,8 @@ packages:
     resolution: {integrity: sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==}
     dev: true
 
-  /typescript/4.8.2:
-    resolution: {integrity: sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==}
+  /typescript/4.8.4:
+    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
@@ -3068,7 +3068,7 @@ packages:
     resolution: {integrity: sha512-Uw5ooOQxRASHgu6C7GVvUxisKXfSgW4oFlO+aa+PAkgmH89O3CXxEEzNRNtHSqtXFTl0nAC1uYj0GMSH27uwtQ==}
     dev: true
 
-  /vue-tsc/0.40.4_typescript@4.8.2:
+  /vue-tsc/0.40.4_typescript@4.8.4:
     resolution: {integrity: sha512-UpK0GlGZHlS+G+LKl6+/f+78GY9MA38vHKBLh/6L/Cfa8NQEH4D5H/EpqcSHXZ7wRRFjzp9LWgj5vc5q1iEClA==}
     hasBin: true
     peerDependencies:
@@ -3076,7 +3076,7 @@ packages:
     dependencies:
       '@volar/vue-language-core': 0.40.4
       '@volar/vue-typescript': 0.40.4
-      typescript: 4.8.2
+      typescript: 4.8.4
     dev: true
 
   /vue/3.2.40:
