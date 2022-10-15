@@ -7,7 +7,7 @@ specifiers:
   '@vitejs/plugin-vue': ^3.1.2
   histoire: ^0.11
   prettier: ^2.7.1
-  release-please: ^14.11.0
+  release-please: ^14.13.1
   typescript: ^4.8.4
   vite: ^3.1.6
   vue: ^3.2.40
@@ -20,7 +20,7 @@ devDependencies:
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.6+vue@3.2.40
   histoire: 0.11.2_vite@3.1.6
   prettier: 2.7.1
-  release-please: 14.11.0
+  release-please: 14.13.1
   typescript: 4.8.4
   vite: 3.1.6
   vue: 3.2.40
@@ -910,7 +910,7 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
   /concat-stream/1.6.2:
@@ -2603,8 +2603,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /release-please/14.11.0:
-    resolution: {integrity: sha512-vMlzR6VbPdOy8QtrSZ0zJuH9OXz/11iYe70DqKkz5NppJOl6om+XBex8CfL/7qMVOe4o1oVmMa6QvCvpXiW/7g==}
+  /release-please/14.13.1:
+    resolution: {integrity: sha512-jFCrp0H3LqLr4bDkhIDylOfl9HAWVuwCMLGQbbqHWpa21+XTnX84pXAg7mmUE8xzZaFfO82uEE/5UIJfKJiZUg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -3284,7 +3284,7 @@ packages:
   /wide-align/1.1.5:
     resolution: {integrity: sha512-eDMORYaPNZ4sQIuuYPDHdQvf4gyCF9rEEV/yPxGfwPkRodwEgiMUUXTx/dex+Me0wxx53S+NgUHaP7y3MGlDmg==}
     dependencies:
-      string-width: 1.0.2
+      string-width: 4.2.3
     dev: true
 
   /word-wrap/1.2.3:
