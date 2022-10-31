@@ -34,7 +34,7 @@
         "@hedger/prettier-config": "^1.2.0",
         "@histoire/plugin-vue": "^0.11",
         "@types/node": "^18.8.3",
-        "@vitejs/plugin-vue": "^3.1.2",
+        "@vitejs/plugin-vue": "^3.2.0",
         "histoire": "^0.11",
         "prettier": "^2.7.1",
         "release-please": "^14.13.1",
