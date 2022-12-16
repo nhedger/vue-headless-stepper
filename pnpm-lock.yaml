@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@hedger/prettier-config': ^1.2.0
   '@histoire/plugin-vue': ^0.11
-  '@types/node': ^18.8.3
+  '@types/node': ^18.11.16
   '@vitejs/plugin-vue': ^3.1.2
   histoire: ^0.11
   prettier: ^2.7.1
@@ -16,7 +16,7 @@ specifiers:
 devDependencies:
   '@hedger/prettier-config': 1.2.0
   '@histoire/plugin-vue': 0.11.2_gedsv7elbwjfkxte3faky66yfi
-  '@types/node': 18.8.3
+  '@types/node': 18.11.16
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.40
   histoire: 0.11.2_vite@3.1.8
   prettier: 2.7.1
@@ -392,7 +392,7 @@ packages:
   /@types/concat-stream/1.6.1:
     resolution: {integrity: sha512-eHE4cQPoj6ngxBZMvVf6Hw7Mh4jMW4U9lpGmS5GBPB9RYxlFg+CHaVN7ErNY4W9XfLIEn20b4VDYaIrbq0q4uA==}
     dependencies:
-      '@types/node': 18.8.3
+      '@types/node': 18.11.16
     dev: true
 
   /@types/flexsearch/0.7.3:
@@ -402,13 +402,13 @@ packages:
   /@types/form-data/0.0.33:
     resolution: {integrity: sha512-8BSvG1kGm83cyJITQMZSulnl6QV8jqAGreJsc5tPu1Jq0vTSOiY/k24Wx82JRpWwZSqrala6sd5rWi6aNXvqcw==}
     dependencies:
-      '@types/node': 18.8.3
+      '@types/node': 18.11.16
     dev: true
 
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 18.8.3
+      '@types/node': 18.11.16
     dev: true
 
   /@types/linkify-it/3.0.2:
@@ -434,8 +434,8 @@ packages:
     resolution: {integrity: sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==}
     dev: true
 
-  /@types/node/18.8.3:
-    resolution: {integrity: sha512-0os9vz6BpGwxGe9LOhgP/ncvYN5Tx1fNcd2TM3rD/aCGBkysb+ZWpXEocG24h6ZzOi13+VB8HndAQFezsSOw1w==}
+  /@types/node/18.11.16:
+    resolution: {integrity: sha512-6T7P5bDkRhqRxrQtwj7vru+bWTpelgtcETAZEUSdq0YISKz8WKdoBukQLYQQ6DFHvU9JRsbFq0JH5C51X2ZdnA==}
     dev: true
 
   /@types/node/8.10.66:
