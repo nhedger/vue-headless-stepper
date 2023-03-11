@@ -7,7 +7,7 @@ specifiers:
   '@vitejs/plugin-vue': ^3.1.2
   histoire: ^0.11
   prettier: ^2.7.1
-  release-please: ^14.13.1
+  release-please: ^14.17.5
   typescript: ^4.8.4
   vite: ^3.1.8
   vue: ^3.2.40
@@ -20,7 +20,7 @@ devDependencies:
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.40
   histoire: 0.11.2_vite@3.1.8
   prettier: 2.7.1
-  release-please: 14.13.1
+  release-please: 14.17.5
   typescript: 4.8.4
   vite: 3.1.8
   vue: 3.2.40
@@ -602,8 +602,8 @@ packages:
     resolution: {integrity: sha512-0PLQ6RUtZM0vO3teRfzGi4ltLUO5aO+kLgwh4Um3THSR03rpQWLTuRCkuO5A41ITzwdWeKdPHtSARuPkoo5pCQ==}
     dev: true
 
-  /@xmldom/xmldom/0.8.2:
-    resolution: {integrity: sha512-+R0juSseERyoPvnBQ/cZih6bpF7IpCXlWbHRoCRzYzqpz6gWHOgf8o4MOEf6KBVuOyqU+gCNLkCWVIJAro8XyQ==}
+  /@xmldom/xmldom/0.8.6:
+    resolution: {integrity: sha512-uRjjusqpoqfmRkTaNuLJ2VohVr67Q5YwDATW3VU7PfzTj6IRaihGrYI7zckGZjxQPBIp63nfvJbM+Yu5ICh0Bg==}
     engines: {node: '>=10.0.0'}
     dev: true
 
@@ -2603,8 +2603,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /release-please/14.13.1:
-    resolution: {integrity: sha512-jFCrp0H3LqLr4bDkhIDylOfl9HAWVuwCMLGQbbqHWpa21+XTnX84pXAg7mmUE8xzZaFfO82uEE/5UIJfKJiZUg==}
+  /release-please/14.17.5:
+    resolution: {integrity: sha512-LlAQ2HT7qQs3pZncMWcBkAVzGdGYW0IOyulzqFed5XTvVIjFPuaaxOAtE682mgFczt2JfekLxABaKai9mMCokQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -2620,7 +2620,7 @@ packages:
       '@octokit/request-error': 3.0.1
       '@octokit/rest': 19.0.4
       '@types/npm-package-arg': 6.1.1
-      '@xmldom/xmldom': 0.8.2
+      '@xmldom/xmldom': 0.8.6
       chalk: 4.1.2
       code-suggester: 4.1.0
       conventional-changelog-conventionalcommits: 5.0.0
@@ -2636,7 +2636,7 @@ packages:
       node-html-parser: 6.1.1
       parse-github-repo-url: 1.4.1
       semver: 7.3.8
-      type-fest: 2.19.0
+      type-fest: 3.6.1
       typescript: 4.8.4
       unist-util-visit: 2.0.3
       unist-util-visit-parents: 3.1.1
@@ -3063,9 +3063,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /type-fest/2.19.0:
-    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
-    engines: {node: '>=12.20'}
+  /type-fest/3.6.1:
+    resolution: {integrity: sha512-htXWckxlT6U4+ilVgweNliPqlsVSSucbxVexRYllyMVJDtf5rTjv6kF/s+qAd4QSL1BZcnJPEJavYBPQiWuZDA==}
+    engines: {node: '>=14.16'}
     dev: true
 
   /typedarray/0.0.6:
