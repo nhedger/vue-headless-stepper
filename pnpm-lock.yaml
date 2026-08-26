@@ -7,7 +7,7 @@ specifiers:
   '@vitejs/plugin-vue': ^3.1.2
   histoire: ^0.11
   prettier: ^2.7.1
-  release-please: ^14.13.1
+  release-please: ^14.17.5
   typescript: ^4.8.4
   vite: ^3.1.8
   vue: ^3.2.40
@@ -20,7 +20,7 @@ devDependencies:
   '@vitejs/plugin-vue': 3.1.2_vite@3.1.8+vue@3.2.40
   histoire: 0.11.2_vite@3.1.8
   prettier: 2.7.1
-  release-please: 14.13.1
+  release-please: 14.17.5
   typescript: 4.8.4
   vite: 3.1.8
   vue: 3.2.40
@@ -178,6 +178,7 @@ packages:
   /@lerna/collect-updates/4.0.0:
     resolution: {integrity: sha512-bnNGpaj4zuxsEkyaCZLka9s7nMs58uZoxrRIPJ+nrmrZYp1V5rrd+7/NYTuunOhY2ug1sTBvTAxj3NZQ+JKnOw==}
     engines: {node: '>= 10.18.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       '@lerna/child-process': 4.0.0
       '@lerna/describe-ref': 4.0.0
@@ -189,6 +190,7 @@ packages:
   /@lerna/describe-ref/4.0.0:
     resolution: {integrity: sha512-eTU5+xC4C5Gcgz+Ey4Qiw9nV2B4JJbMulsYJMW8QjGcGh8zudib7Sduj6urgZXUYNyhYpRs+teci9M2J8u+UvQ==}
     engines: {node: '>= 10.18.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       '@lerna/child-process': 4.0.0
       npmlog: 4.1.2
@@ -197,6 +199,7 @@ packages:
   /@lerna/package-graph/4.0.0:
     resolution: {integrity: sha512-QED2ZCTkfXMKFoTGoccwUzjHtZMSf3UKX14A4/kYyBms9xfFsesCZ6SLI5YeySEgcul8iuIWfQFZqRw+Qrjraw==}
     engines: {node: '>= 10.18.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       '@lerna/prerelease-id-from-version': 4.0.0
       '@lerna/validation-error': 4.0.0
@@ -208,6 +211,7 @@ packages:
   /@lerna/package/4.0.0:
     resolution: {integrity: sha512-l0M/izok6FlyyitxiQKr+gZLVFnvxRQdNhzmQ6nRnN9dvBJWn+IxxpM+cLqGACatTnyo9LDzNTOj2Db3+s0s8Q==}
     engines: {node: '>= 10.18.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       load-json-file: 6.2.0
       npm-package-arg: 8.1.5
@@ -217,6 +221,7 @@ packages:
   /@lerna/prerelease-id-from-version/4.0.0:
     resolution: {integrity: sha512-GQqguzETdsYRxOSmdFZ6zDBXDErIETWOqomLERRY54f4p+tk4aJjoVdd9xKwehC9TBfIFvlRbL1V9uQGHh1opg==}
     engines: {node: '>= 10.18.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       semver: 7.3.8
     dev: true
@@ -224,6 +229,7 @@ packages:
   /@lerna/query-graph/4.0.0:
     resolution: {integrity: sha512-YlP6yI3tM4WbBmL9GCmNDoeQyzcyg1e4W96y/PKMZa5GbyUvkS2+Jc2kwPD+5KcXou3wQZxSPzR3Te5OenaDdg==}
     engines: {node: '>= 10.18.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       '@lerna/package-graph': 4.0.0
     dev: true
@@ -231,6 +237,7 @@ packages:
   /@lerna/run-topologically/4.0.0:
     resolution: {integrity: sha512-EVZw9hGwo+5yp+VL94+NXRYisqgAlj0jWKWtAIynDCpghRxCE5GMO3xrQLmQgqkpUl9ZxQFpICgYv5DW4DksQA==}
     engines: {node: '>= 10.18.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       '@lerna/query-graph': 4.0.0
       p-queue: 6.6.2
@@ -239,6 +246,7 @@ packages:
   /@lerna/validation-error/4.0.0:
     resolution: {integrity: sha512-1rBOM5/koiVWlRi3V6dB863E1YzJS8v41UtsHgMr6gB2ncJ2LsQtMKlJpi3voqcgh41H8UsPXR58RrrpPpufyw==}
     engines: {node: '>= 10.18.0'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       npmlog: 4.1.2
     dev: true
@@ -602,8 +610,8 @@ packages:
     resolution: {integrity: sha512-0PLQ6RUtZM0vO3teRfzGi4ltLUO5aO+kLgwh4Um3THSR03rpQWLTuRCkuO5A41ITzwdWeKdPHtSARuPkoo5pCQ==}
     dev: true
 
-  /@xmldom/xmldom/0.8.2:
-    resolution: {integrity: sha512-+R0juSseERyoPvnBQ/cZih6bpF7IpCXlWbHRoCRzYzqpz6gWHOgf8o4MOEf6KBVuOyqU+gCNLkCWVIJAro8XyQ==}
+  /@xmldom/xmldom/0.8.15:
+    resolution: {integrity: sha512-/5NV/vDALVFDXgLmfsy9TRCBlKwO2LNBFzpzvb9iIj+jR+eSc6DLYYvVOdivT/jm7MtU6TebYuRmzEOI7w40UA==}
     engines: {node: '>=10.0.0'}
     dev: true
 
@@ -660,6 +668,7 @@ packages:
 
   /are-we-there-yet/1.1.7:
     resolution: {integrity: sha512-nxwy40TuMiUGqMyRHgCSWZ9FM4VAoRP4xUYSTv5ImRog+h9yISPbVH7H8fASCIzYn9wlEv4zvFL7uKDMCFQm3g==}
+    deprecated: This package is no longer supported.
     dependencies:
       delegates: 1.0.0
       readable-stream: 2.3.7
@@ -1567,6 +1576,7 @@ packages:
 
   /gauge/2.7.4:
     resolution: {integrity: sha512-14x4kjc6lkD3ltw589k0NrPD6cCNTD6CWoVUNpB85+DrtONoZn+Rug6xZU5RvSC4+TZPxA5AnBibQYAvZn41Hg==}
+    deprecated: This package is no longer supported.
     dependencies:
       aproba: 1.2.0
       console-control-strings: 1.1.0
@@ -1610,6 +1620,7 @@ packages:
 
   /glob/7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -1838,6 +1849,7 @@ packages:
 
   /inflight/1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -2297,6 +2309,7 @@ packages:
 
   /npmlog/4.1.2:
     resolution: {integrity: sha512-2uUqazuKlTaSI/dC8AzicUck7+IrEaOnN/e0jd3Xtt1KcGpwx30v50mL7oPyr/h9bL3E4aZccVwpwP+5W9Vjkg==}
+    deprecated: This package is no longer supported.
     dependencies:
       are-we-there-yet: 1.1.7
       console-control-strings: 1.1.0
@@ -2530,6 +2543,10 @@ packages:
   /q/1.5.1:
     resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
+    deprecated: |-
+      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
+      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
     dev: true
 
   /qs/6.11.0:
@@ -2603,8 +2620,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /release-please/14.13.1:
-    resolution: {integrity: sha512-jFCrp0H3LqLr4bDkhIDylOfl9HAWVuwCMLGQbbqHWpa21+XTnX84pXAg7mmUE8xzZaFfO82uEE/5UIJfKJiZUg==}
+  /release-please/14.17.5:
+    resolution: {integrity: sha512-LlAQ2HT7qQs3pZncMWcBkAVzGdGYW0IOyulzqFed5XTvVIjFPuaaxOAtE682mgFczt2JfekLxABaKai9mMCokQ==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -2620,7 +2637,7 @@ packages:
       '@octokit/request-error': 3.0.1
       '@octokit/rest': 19.0.4
       '@types/npm-package-arg': 6.1.1
-      '@xmldom/xmldom': 0.8.2
+      '@xmldom/xmldom': 0.8.15
       chalk: 4.1.2
       code-suggester: 4.1.0
       conventional-changelog-conventionalcommits: 5.0.0
@@ -2636,7 +2653,7 @@ packages:
       node-html-parser: 6.1.1
       parse-github-repo-url: 1.4.1
       semver: 7.3.8
-      type-fest: 2.19.0
+      type-fest: 3.13.1
       typescript: 4.8.4
       unist-util-visit: 2.0.3
       unist-util-visit-parents: 3.1.1
@@ -3063,9 +3080,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /type-fest/2.19.0:
-    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
-    engines: {node: '>=12.20'}
+  /type-fest/3.13.1:
+    resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
+    engines: {node: '>=14.16'}
     dev: true
 
   /typedarray/0.0.6:
